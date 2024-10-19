@@ -1,7 +1,8 @@
-import { CarouselDemo } from "@/components/carouse"
-import { TextGenerateEffectDemo } from "@/components/textDemo"
-import { Element } from "react-scroll"
-import { InfiniteMovingCardsDemo } from '@/components/InfiniteMovingCardsDemo'
+import { Link } from "react-scroll";
+import { CarouselDemo } from "@/components/carouse";
+import { TextGenerateEffectDemo } from "@/components/textDemo";
+import { Element } from "react-scroll";
+
 export function Hero() {
   return (
     <Element name="hero">
@@ -13,9 +14,16 @@ export function Hero() {
               <p className="text-xl mb-6 text-center md:text-left max-w-md text-muted-foreground">
                 <TextGenerateEffectDemo />
               </p>
-              <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full transition-colors duration-300">
+
+              {/* Link to Scroll to Timeline Section */}
+              <Link
+                to="timeline-section"
+                smooth={true}
+                duration={500}
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full transition-colors duration-300 cursor-pointer"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
 
             {/* Carousel Section */}
@@ -24,11 +32,11 @@ export function Hero() {
                 <CarouselDemo />
               </div>
             </div>
-            
           </div>
-          <InfiniteMovingCardsDemo />
+          
+          {/* <InfiniteMovingCardsDemo /> */}
         </div>
       </section>
     </Element>
-  )
+  );
 }
