@@ -49,7 +49,7 @@ const Header = () => {
       <div className="container flex h-14 items-center justify-between max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
           <h1 className="h5 text-foreground dark:text-foreground">
-            Fady
+            The Agency
             <span className="text-accent">.</span>
           </h1>
         </a>
