@@ -77,7 +77,7 @@ const Header = () => {
                     )}
                   >
                     <h1 className="h5 text-foreground dark:text-foreground">
-                      Fady
+                      The Agency
                       <span className="text-accent">.</span>
                     </h1>
                   </LinkScroll>
